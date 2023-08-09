@@ -204,17 +204,28 @@
     font-weight:600
   }
 }
-/* ----------------------------------------sidebar-------------------------------------------------------------------------- */
-.sidebar {
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    left: -300px;
-    width: 300px;
-    transition: left 0.3s;
-    background-color: #f8f9fa;
-  }
+.bg-brown{background: #D0BAA8 !important;}
 
-  .sidebar.show {
-    left: 0;
-  }
+.text-whitecoffee{color:#EFEAE4 !important;}
+.border-filter {
+
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;}
+
+.bg-darkgreen{background-color: #254021 !important;}
+
+@media (max-width:991.98px) {
+    .res-phone{display: flex;
+    flex-wrap: wrap;}
+    .resp-1{
+        width: 100%;
+    }
+    .resp-2{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .resp-3{
+        width: 50%;
+        margin:10px;
+    }
+}
