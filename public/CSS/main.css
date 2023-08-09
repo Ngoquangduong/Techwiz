@@ -212,3 +212,20 @@
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;}
 
 .bg-darkgreen{background-color: #254021 !important;}
+
+@media (max-width:991.98px) {
+    .res-phone{display: flex;
+    flex-wrap: wrap;}
+    .resp-1{
+        width: 100%;
+    }
+    .resp-2{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .resp-3{
+        width: 50%;
+        margin:10px;
+    }
+}
