@@ -19,4 +19,11 @@ class User extends Authenticatable
     {
         return $this->belongsTo(role::class, 'RoleID');
     }
+    public $fillable = [
+        'name',
+        'email',
+        'phone',
+        'password',
+
+    ];
 }
