@@ -2,10 +2,11 @@
 
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
-
-    Route::get('/', function () {
-        return view('Admin.HomePage');
-    });
+use App\Http\Controllers\Admin\Auth\LoginController;
+use App\Http\Middleware\checkAdmin;
+    // Route::get('/', function () {
+    //     return view('Admin.HomePage');
+    // });
     Route::get('/adminLogin', function () {
         return view('Admin.Auth.login');
     });
@@ -17,4 +18,12 @@ use Illuminate\Support\Facades\Route;
     });
 
 
+    Route::match(['get', 'post'], '/adminlogin1', [LoginController::class, 'login'])->name('admin.login');
+    // Route::middleware('auth:admin')->group(function (){
+    //     Route::get('/admin', [HomeController::class, 'index'])->name('dashboard');
+    // });
+
+    // Route::get('/', function () {
+    //     return view('Admin.HomePage');
+    // });
 ?>
