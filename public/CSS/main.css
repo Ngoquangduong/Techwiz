@@ -204,17 +204,9 @@
     font-weight:600
   }
 }
-/* ----------------------------------------sidebar-------------------------------------------------------------------------- */
-.sidebar {
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    left: -300px;
-    width: 300px;
-    transition: left 0.3s;
-    background-color: #f8f9fa;
-  }
+.bg-dark-green{background: #D0BAA8 !important;}
 
-  .sidebar.show {
-    left: 0;
-  }
+.text-whitecoffee{color:#EFEAE4 !important;}
+.border-filter {
+
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;}

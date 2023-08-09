@@ -24,9 +24,7 @@ Route::get('/login_register', function(){
 
 
 
-Route::get('/master', function(){
-    return view('master');
-})->name('master');
+
 
 Route::get('/home', function(){
     return view('home');

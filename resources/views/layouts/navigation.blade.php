@@ -123,7 +123,7 @@
                   <div class="collapse navbar-collapse  " id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                       <li class="nav-item navbarlink">
-                        <a class="nav-link navbarlink nav-link-font" href="{{ route('master') }}">Home</a>
+                        <a class="nav-link navbarlink nav-link-font" href="{{ route('home') }}">Home</a>
                       </li>
                       <li class="nav-item navbarlink">
                         <a class="nav-link navbarlink nav-link-font" href="#">About Us</a>
