@@ -1,31 +1,40 @@
 <?php
 
+use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\PaymentController;
-use App\Http\Controllers\UserController;
+
+/*
+|--------------------------------------------------------------------------
+| Web Routes
+|--------------------------------------------------------------------------
+|
+| Here is where you can register web routes for your application. These
+| routes are loaded by the RouteServiceProvider and all of them will
+| be assigned to the "web" middleware group. Make something great!
+|
+*/
 
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('/master', function () {
-    return view('master');
-});
-Route::get('/landpage', function () {
-    return view('landpage');
-});
-
-Route::get('/logout', function () {
-    Session::forget('user');
-    return redirect('login');
-});
-
 Route::get('/login_register', function(){
-    return view ('login_register');
+    return view('login_register');
 });
-// Route::get("/login",[UserController::class,'login'])->name('login')->middleware('USERLOGIN');
-// Route::get("/register",[UserController::class,'register'])->middleware('USERREGISTER');
-// Route::post("/login",[UserController::class,'loginUser'])->name('login-user')->middleware('USERLOGIN');
-// Route::post("/register-user",[UserController::class,'registerUser'])->name('register-user')->middleware('USERREGISTER');
 
-Route::get('/payment', [PaymentController::class, 'showPaymentForm'])->name('payment.form');
-Route::post('/payment', [PaymentController::class, 'processPayment'])->name('payment.process');
+
+
+
+Route::get('/master', function(){
+    return view('master');
+})->name('master');
+Route::get('/dashboard', function () {
+    return view('dashboard');
+})->middleware(['auth', 'verified'])->name('dashboard');
+
+Route::middleware('auth')->group(function () {
+    Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
+    Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
+    Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
+});
+
+require __DIR__.'/auth.php';
