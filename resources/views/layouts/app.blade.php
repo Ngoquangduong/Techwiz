@@ -59,29 +59,29 @@
                         </div>
                         <div class="btn-group ">
                             @auth
-                            <button type="button" class="btn btn-outline-light">{{ Auth::user()->name }}</button>
-                            <button type="button" class="btn btn-outline-light dropdown-toggle dropdown-toggle-split"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                <span class="visually-hidden">Toggle Dropdown</span>
-                            </button>
-                            <ul class="dropdown-menu" role="button">
-                                <li><a class="navbarlink text-decoration-none dropdown-item text-center"
-                                        href="{{ route('profile.update') }}">Account Settings </a></li>
-                                <li class="text-center dropdown-item">
-                                    <form method="POST" action="{{ route('logout') }}">
-                                        @csrf
-                        
-                                        <a class="nav-link text-danger" :href="route('logout')"
-                                            onclick="event.preventDefault();
+                                <button type="button" class="btn btn-outline-light">{{ Auth::user()->name }}</button>
+                                <button type="button" class="btn btn-outline-light dropdown-toggle dropdown-toggle-split"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    <span class="visually-hidden">Toggle Dropdown</span>
+                                </button>
+                                <ul class="dropdown-menu" role="button">
+                                    <li><a class="navbarlink text-decoration-none dropdown-item text-center"
+                                            href="{{ route('profile.update') }}">Account Settings </a></li>
+                                    <li class="text-center dropdown-item">
+                                        <form method="POST" action="{{ route('logout') }}">
+                                            @csrf
+
+                                            <a class="nav-link text-danger" :href="route('logout')"
+                                                onclick="event.preventDefault();
                                                                         this.closest('form').submit();">
-                                            {{ __('Log Out') }}
-                                        </a>
-                                    </form>
-                                </li>
-                            </ul>
+                                                {{ __('Log Out') }}
+                                            </a>
+                                        </form>
+                                    </li>
+                                </ul>
                             @else
-                            <a href="{{ route('login') }}" class="btn btn-outline-light">Login</a>
-                            <a href="{{ route('register') }}" class="btn btn-outline-light">Register</a>
+                                <a href="{{ route('login_register') }}" class="btn btn-outline-light">Login</a>
+                                <a href="{{ route('login_register') }}" class="btn btn-outline-light">Register</a>
                             @endauth
                         </div>
                     </div>
