@@ -58,10 +58,9 @@
 
 
 
-        <div class="col-md-9 col-sm-12 my-4 justify-content-center resp-2">
+        <div class="col-md-9 col-sm-12 my-4 justify-content-center ">
             <div class="container d-flex flex-wrap row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 justify-content-center">
                 <!-- Product 1 -->
-                
                 <div class="col-sm-6 col-md-4 col-lg-4 ">
                     <div class="card resp-3" style="width: 18rem;">
                         <img src="..." class="card-img-top" alt="...">
@@ -76,23 +75,28 @@
                 </div>
 
                 <!-- Add more products here... -->
+       
+
+          
+
 
             </div>
         </div>
+    </div>
 
 
 
-        <!-- ... (phần mã JavaScript còn lại) ... -->
+    <!-- ... (phần mã JavaScript còn lại) ... -->
 
-        <script>
-            // ... (các tác vụ JavaScript khác)
+    <script>
+        // ... (các tác vụ JavaScript khác)
 
-            const resetFilterButton = document.getElementById('resetFilter');
+        const resetFilterButton = document.getElementById('resetFilter');
 
-            resetFilterButton.addEventListener('click', function() {
-                const filterCollapse = new bootstrap.Collapse(filterAccordion);
-                filterCollapse.show();
-                resetFilter();
-            });
-        </script>
-    @endsection
+        resetFilterButton.addEventListener('click', function() {
+            const filterCollapse = new bootstrap.Collapse(filterAccordion);
+            filterCollapse.show();
+            resetFilter();
+        });
+    </script>
+@endsection
