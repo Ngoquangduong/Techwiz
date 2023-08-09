@@ -204,9 +204,11 @@
     font-weight:600
   }
 }
-.bg-dark-green{background: #D0BAA8 !important;}
+.bg-brown{background: #D0BAA8 !important;}
 
 .text-whitecoffee{color:#EFEAE4 !important;}
 .border-filter {
 
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;}
+
+.bg-darkgreen{background-color: #254021 !important;}

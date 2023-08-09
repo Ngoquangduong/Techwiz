@@ -5,7 +5,7 @@
         <div class="accordion text-whitecoffee border-filter" id="filterAccordion">
             <div class="accordion-item ">
                 <h2 class="accordion-header text-whitecoffee " id="heading_1">
-                    <button class="accordion-button bg-dark-green text-whitecoffee" type="button" data-bs-toggle="collapse"
+                    <button class="accordion-button bg-brown text-whitecoffee" type="button" data-bs-toggle="collapse"
                         data-bs-target="#collapse_1" aria-expanded="true">
 
                         Product Type
@@ -37,7 +37,7 @@
                                     Plant
                                 </label>
                             </div>
-                            <button id="applyFilter" class="btn btn-primary mt-3">Apply</button>
+                            <button id="applyFilter" class="btn bg-darkgreen text-whitecoffee mt-3">Apply</button>
                         </form>
                         <form class="d-flex mt-3" role="search">
                             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
