@@ -208,45 +208,10 @@
 
 .text-whitecoffee{color:#EFEAE4 !important;}
 .border-filter {
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-  border-top: none !important;
-  border-bottom: none !important;
-    }
+
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;}
 
 .bg-darkgreen{background-color: #254021 !important;}
-
- /* CSS */
- .button-62 {
-  background: linear-gradient(to bottom right, #EF4765, #FF9A5A);
-  border: 0;
-  border-radius: 12px;
-  color: #FFFFFF;
-  cursor: pointer;
-  display: inline-block;
-  font-family: -apple-system,system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 2.5;
-  outline: transparent;
-  padding: 0 1rem;
-  text-align: center;
-  text-decoration: none;
-  transition: box-shadow .2s ease-in-out;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  white-space: nowrap;
-  }
-
-  .button-62:not([disabled]):focus {
-  box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5),
-  .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
-  }
-
-  .button-62:not([disabled]):hover {
-  box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5),
-  .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
-  }
 
 @media (max-width:991.98px) {
     .res-phone{display: flex;
@@ -263,65 +228,4 @@
         width: 50%;
         margin:10px;
     }
-}
-
-/* Disable the active (clicked) state for accordion button */
-.accordion-button:focus {
-  box-shadow: none !important;
-  border: none !important;
-}
-
-/* Remove the hover effect for accordion button */
-.accordion-button:hover {
-  background-color: transparent !important;
-  border: none !important;
-}
-
-/* Hide the border of the accordion items */
-.accordion-item {
-  border: none !important;
-}
-
-/* Optional: Adjust spacing between accordion items */
-.accordion-item + .accordion-item {
-  margin-top: 0 !important; /* You can adjust this value as needed */
-  border: none !important;
-}
-
-/* Set text color to black for accordion headers */
-.accordion-button {
-  background: transparent !important;
-  border: none !important;
-  color: black !important;
-}
-
-/* Remove background color for accordion content */
-.accordion-collapse {
-  background-color: transparent !important;
-  border: none !important;
-}
-
-/* CSS cho màn hình di?n tho?i */
-@media screen and (max-width: 576px) {
-  #productAccordion {
-      display: none;
-  }
-
-  #toggleFilter {
-      margin-top: 10px;
-  }
-
-  .accordion-button {
-      background-color: transparent;
-      color: black;
-  }
-
-  .accordion-button:hover {
-      background-color: transparent;
-  }
-
-  .accordion-item {
-      border: none;
-      margin-top: 10px;
-  }
 }
